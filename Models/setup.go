@@ -2,6 +2,7 @@ package models
 
 import (
 	"fmt"
+	"log"
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres" // using postgres sql
@@ -24,6 +25,7 @@ func SetupModels() *gorm.DB {
 	fmt.Println("conname is\t\t", prosgret_conname)
 	db, err := gorm.Open("postgres", prosgret_conname)
 	if err != nil {
+		log.Fatal(err)
 		panic("Failed to connect to database!")
 	}
 	db.AutoMigrate(&Book{})

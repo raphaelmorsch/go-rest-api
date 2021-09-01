@@ -1,12 +1,10 @@
-module github.com/rest-api
+module projects/rest-api
 
 go 1.17
 
-require github.com/jinzhu/gorm v1.9.16
-
 require (
 	github.com/gin-gonic/gin v1.7.4
-	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jinzhu/gorm v1.9.16
 	github.com/spf13/viper v1.8.1
 )
 
@@ -18,6 +16,7 @@ require (
 	github.com/go-playground/validator/v10 v10.4.1 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.11 // indirect
 	github.com/leodido/go-urn v1.2.0 // indirect
 	github.com/lib/pq v1.1.1 // indirect

@@ -1,9 +1,9 @@
 package main
 
 import (
-	models "github.com/rest-api/Models" // new
+	models "projects/rest-api/Models" // new
 
-	controllers "github.com/rest-api/Models/Controllers" // new
+	controllers "projects/rest-api/Controllers" // new
 
 	"github.com/gin-gonic/gin"
 )
